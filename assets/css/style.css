@@ -741,6 +741,7 @@ a:hover {
   position: relative;
   color: #fff;
 }
+.hero route bg-image
 
 .hero .hero-content {
   text-align: center;
@@ -784,7 +785,9 @@ a:hover {
 .hero .text-slider-items {
   display: none;
 }
-
+.text-center {
+  text-align: justify !important;
+}
 .hero-single {
   height: 350px;
 }
@@ -824,6 +827,18 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+/* Agrega una transición suave para los cambios */
+.animate-left-to-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.2s ease, transform 1.5s ease;
+}
+
+/* Aplica la animación cuando el usuario hace scroll hasta el elemento */
+.animate-left-to-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
